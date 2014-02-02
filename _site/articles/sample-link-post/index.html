@@ -9,26 +9,21 @@
 <meta name="description" content="Example and code for using link posts.">
 <meta name="keywords" content="sample post, link post">
 
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://localhost:4000/images/site-logo.png">
-<meta name="twitter:title" content="Sample Link Post">
-<meta name="twitter:description" content="Example and code for using link posts.">
-<meta name="twitter:creator" content="@hmfaysal">
+
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Sample Link Post">
 <meta property="og:description" content="Example and code for using link posts.">
-<meta property="og:url" content="http://localhost:4000/articles/sample-link-post">
+<meta property="og:url" content="http://localhost:4000/articles/sample-link-post/">
 <meta property="og:site_name" content="Site Title">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/articles/sample-link-post">
+<link rel="canonical" href="http://localhost:4000/articles/sample-link-post/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Site Title Feed">
 
 
@@ -39,10 +34,14 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="http://localhost:4000/assets/css/main.min.css">
-<!-- Load Modernizr -->
-<script src="http://localhost:4000/assets/js/modernizr-2.6.2.min.js"></script>
 <!-- Webfonts -->
-<script src="//use.edgefonts.net/electrolize;abel;courier-prime:n4.js"></script>
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
 <!-- Icons -->
 <!-- 16x16 -->
 <link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
@@ -57,87 +56,43 @@
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script>
-        MathJax.Hub.Config({
-            config: ["MMLorHTML.js"],
-            extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
-            jax: ["input/TeX"],
-            tex2jax: {
-                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-                processEscapes: false
-            },
-            TeX: {
-                TagSide: "right",
-                TagIndent: ".8em",
-                MultLineWidth: "85%",
-                equationNumbers: {
-                   autoNumber: "AMS",
-                },
-                unicode: {
-                   fonts: "STIXGeneral,'Arial Unicode MS'" 
-                }
-            },
-            showProcessingMessages: false
-        });
-    </script>
 </head>
 
-<body id="post" itemscope itemtype="http://schema.org/WebPage">
+<body id="post">
 
-<div class="container">	
-			<div class="codrops-top clearfix">
-				<a href="http://twitter.com/hmfaysal" title="Your Name on Twitter" target="_blank"><span>Follow my Updates</span></a>
-				<span class="right"><a href="http://social.hmfaysal.tk/index.php?a=profile&u=hmfaysal" title="Your Name on HMFaysal Social" target="_blank"><span>Add me as a friend</span></a></span>
-			</div>
-		  <!-- Collect the nav links, forms, and other content for toggling -->
-		  <header>
-				<h1 class="site-title animated fadeIn"><a href="http://localhost:4000">Site Title</a></h1><span><h2 class="site-description animated fadeIn" itemprop="description">Describe your website here.</h2></span>
-			</header>
-		  	<div class="component">
-				<h2>Sample Link Post</h2>
-				<!-- Start Nav Structure -->
-<button class="cn-button" id="cn-button" itemscope itemtype="http://schema.org/SiteNavigationElement">Menu</button>
-	<div class="cn-wrapper" id="cn-wrapper">
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
 	    <ul>
 	        
 			<li>
 				
-					<a href="http://localhost:4000/technical-details"><span>T-Details</span></a>
+					<a href="http://localhost:4000/about/">About</a>
 				 
 			</li>
 	        
 			<li>
 				
-					<a href="http://localhost:4000/tags"><span>Tags</span></a>
+					<a href="http://localhost:4000/articles/">Articles</a>
 				 
 			</li>
 	        
 			<li>
 				
-					<a href="http://localhost:4000/categories"><span>Categories</span></a>
+					<a href="http://localhost:4000/theme-setup/">Theme Setup</a>
 				 
 			</li>
 	        
 			<li>
 				
-					<a href="http://localhost:4000/"><span>Blog</span></a>
+					<a href="http://mademistakes.com">Made Mistakes</a>
 				 
 			</li>
 	        
-			<li>
-				
-					<a href="http://localhost:4000/about"><span>About</span></a>
-				 
-			</li>
-	        
-	        <li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><span>Feed</a></span></li>
-	        <li class="dosearch"><a href="#" title="Search"><span>Search</a></span></li>
+	        <li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+	        <li class="dosearch"><i class="icon-search"></i> Search</li>
 	    </ul>
-	</div>
-	<div id="cn-overlay" class="cn-overlay"></div>
-				<!-- End of Nav Structure -->
+	</nav>
+</div><!-- /.navigation-wrapper -->
 
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 
@@ -149,38 +104,48 @@
 	</div><!-- /.search-form -->
 </div><!-- ./search-wrapper -->
 
-<div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
-  <article class="hentry" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+<header class="masthead">
+	<div class="wrap">
+        
+    		<a href="http://localhost:4000" class="site-logo" rel="home" title="Site Title"><img src="http://localhost:4000/images/site-logo.png" width="200" height="200" alt="Site Title logo" class="animated fadeInUp"></a>
+        
+        <h1 class="site-title animated fadeIn"><a href="http://localhost:4000">Site Title</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">Describe your website here.</h2>
+	</div>
+</header><!-- /.masthead -->
+
+
+<div id="main" role="main">
+  <article class="hentry">
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <span class="entry-tags"><a href="http://localhost:4000/tags.html#sample post" title="Pages tagged sample post" rel="tag">sample post</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags.html#link post" title="Pages tagged link post" rel="tag">link post</a></span>
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#sample post" title="Pages tagged sample post">sample post</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags/#link post" title="Pages tagged link post">link post</a></span>
         
-          <h1 class="entry-title" itemprop="headline"><a href="http://mademistakes.com">Sample Link Post <span class="link-arrow">&rarr;</span></a></h1>
+          <h1 class="entry-title"><a href="http://mademistakes.com">Sample Link Post <span class="link-arrow">&rarr;</span></a></h1>
         
-        <p><i class="icon-time"></i> 1 minute read&nbsp;&bull;&nbsp;<time datetime="2013-08-12T00:00:00-04:00" itemprop="datePublished"><i class="icon-calendar"></i> August 12, 2013</time>&nbsp;&bull;&nbsp;<i class="icon-th-list"></i> Posted in <a href="http://localhost:4000/categories/index.html#articles" title="Other posts from the articles category" rel="tag">Articles</a>&nbsp;&bull;&nbsp;<i class="icon-share"></i><a href="https://twitter.com/intent/tweet?text=&quot;Sample Link Post&quot;%20http://localhost:4000/articles/sample-link-post%20via%20&#64;hmfaysal" data-dnt="true"> Share</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
       </header>
-      <br>
-<div class="entry-content" itemprop="description">
+      <footer class="entry-meta">
+        <img src="http://localhost:4000/images/bio-photo.jpg" alt="Your Name photo" class="author-photo">
+        <span class="author vcard">By <span class="fn"><a href="http://localhost:4000/about/" title="About Your Name">Your Name</a></span></span>
+        <span class="entry-date date published"><time datetime="2013-08-12T00:00:00-04:00"><i class="icon-calendar-empty"></i> August 12, 2013</time></span>
+        
+        
+        <span><a href="http://localhost:4000/articles/sample-link-post/" rel="bookmark" title="Sample Link Post"><i class="icon-link"></i> Permalink</a></span>
+        
+      </footer>
+      <div class="entry-content">
         <p>So Simple Theme now supports <strong>link posts</strong>, made famous by John Gruber. To activate just add <code>link: http://url-you-want-linked</code> to the post’s YAML front matter and you’re done.</p>
 
-        <br />
-<p>
-  Till next time,<br/>
-  <a href="/about" title="Your Name" target="_self">Your Name</a></p>
-<p>
-  <img src="http://localhost:4000/images/signature.png" alt="Your Names-signature" /> 
-</p>
         
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="http://localhost:4000/articles/video-post" class="btn" title="A Post with a Video">Previous article</a>
+        <a href="http://localhost:4000/articles/video-post/" class="btn" title="A Post with a Video">Previous article</a>
       
       
-        <a href="http://localhost:4000/articles/code-highlighting-post" class="btn" title="Syntax Highlighting Post">Next article</a>
+        <a href="http://localhost:4000/articles/code-highlighting-post/" class="btn" title="Syntax Highlighting Post">Next article</a>
       
     </nav><!-- /.pagination -->
   </article>
@@ -188,10 +153,9 @@
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    <span>&copy; 2014 All Rights Reserved by Your Name.</span>
+    <span>&copy; 2014 Your Name. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">So Simple Theme</a>.</span>
 <div class="social-icons">
-	<a href="http://social.hmfaysal.tk/index.php?a=profile&u=hmfaysal" title="Your Name on HMFaysal Social" target="_blank"><i class="icon-coffee icon-2x"></i></a>
-	<a href="http://twitter.com/hmfaysal" title="Your Name on Twitter" target="_blank"><i class="icon-twitter icon-2x"></i></a>
+	
 	
 	
 	
@@ -207,9 +171,6 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
-<script src="http://localhost:4000/assets/js/polyfills.js"></script>
-<script src="http://localhost:4000/assets/js/highlight.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 
 <!-- Jekyll Simple Search option -->
 <script>
@@ -247,7 +208,27 @@
 </script>
 
 
-	        
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = ''; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>	        
 
 </body>
 </html>
