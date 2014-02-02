@@ -1,4 +1,4 @@
-title:            Site Title
+title:            จ.เหนือสแตนเลส
 description:      Describe your website here.
 logo:             site-logo.png
 disqus_shortname: 
@@ -9,9 +9,9 @@ url:              http://localhost:4000
 
 # Owner/author information
 owner:
-  name:				Your Name
+  name:				J.NorthenStainless
   avatar:			bio-photo.jpg
-  email:			you@email.com
+  email:			j.northenStainless@email.com
   signoff_text:		Till next time
   signoff_link:		/about
   signature_image:	signature.png
