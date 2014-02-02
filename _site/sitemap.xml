@@ -6,31 +6,35 @@
     
     
     <url>
-        <loc>http://localhost:4000/articles/code-highlighting-post/</loc>
+        <loc>http://localhost:4000/background-image/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/sample-link-post/</loc>
+        <loc>http://localhost:4000/code-highlighting-post/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/video-post/</loc>
+        <loc>http://localhost:4000/sample-link-post/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/readability-feature-post/</loc>
+        <loc>http://localhost:4000/video-post/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/sample-post-images/</loc>
+        <loc>http://localhost:4000/readability-feature-post/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/readability-post/</loc>
+        <loc>http://localhost:4000/sample-post-images/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/sample-post/</loc>
+        <loc>http://localhost:4000/readability-post/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/sample-post/</loc>
     </url>
     
 </urlset>
